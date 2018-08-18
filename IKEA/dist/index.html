@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700,900"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="css/nomalize.css"/>
+  <link rel="stylesheet" href="css/main.min.css"/>
+</head>
+<body class="body">
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__wrapper">
+                <nav class="main-header__nav">
+                    <a href="#" class="main-logo">
+                        <img src="img/logo.svg" alt="Logo ikea" class="main-logo__img"/>
+                    </a>
+                    <div class="navigation-box__wrapper">
+                        <button class="burger">
+                            <i class="material-icons icon-header">menu</i>
+                        </button>
+                        <ul class="navigation-box__list">
+                            <li class="navigation-box__item display-none">
+                                <a href="#" class="navigation-box__link">New</a>
+                            </li>
+                            <li class="navigation-box__item display-none">
+                                <a href="#" class="navigation-box__link">Products</a>
+                            </li>
+                            <li class="navigation-box__item display-none">
+                                <a href="#" class="navigation-box__link">Rooms</a>
+                            </li>
+                            <li class="navigation-box__item display-none">
+                                <a href="#" class="navigation-box__link">Inspirations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="main-header__search">
+                    <form action="#" method="post" class="form">
+                        <button type="submit" class="form__btn">
+                            <i class="material-icons icon-header">search</i>
+                        </button>
+                        <label for="search" aria-label="Search products" class="visually-hidden"></label>
+                        <input type="search" name="search" id="search" placeholder="Search products..." class="form__search"/>
+                    </form>
+                </div>
+                <div class="main-header__cart">
+                    <a href="#" class="cart-link">
+                        <span class="cart-link__price">$0</span>
+                        <i class="material-icons icon-header">shopping_cart</i>
+                        <div class="cart-link__count cart-link__count--position-header">2</div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__wrapper container">
+            <section class="section-sofa">
+                <h1 class="visually-hidden">Ikea</h1>
+                <div class="section-sofa__nav">
+                    <ul class="section-sofa__list">
+                        <li class="section-sofa__item">
+                            <a href="" class="section-sofa__link section-sofa__link--after">Home</a>
+                        </li>
+                        <li class="section-sofa__item">
+                            <a href="" class="section-sofa__link section-sofa__link--after">Products</a>
+                        </li>
+                        <li class="section-sofa__item">
+                            <a href="" class="section-sofa__link section-sofa__link--after">Sofa & Armchairs</a>
+                        </li>
+                        <li class="section-sofa__item">
+                            <a href="" class="section-sofa__link section-sofa__link--active">Stockholm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-sofa__option">
+                    <div class="section-sofa__img-sofa">
+                        <div class="dimension-box">
+                            <p class="dimension-box__value">74cm</p>
+                            <svg width="130" height="15" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="10" x2="130" y2="10" stroke="#aaa" stroke-width="1" />
+                                <line x1="0" y1="5" x2="0" y2="15" stroke="#aaa" stroke-width="2" />
+                                <line x1="130" y1="5" x2="130" y2="15" stroke="#aaa" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <svg width="350" height="60" class="section-sofa__elipse" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse rx="175" ry="30" cx="175" cy="30" fill="transparent" stroke="#aaa" stroke-dasharray="2" stroke-width="1" />
+                        </svg>
+                        <img src="img/sofa.png" alt="three-seat sofa" class="section-sofa__img-main"/>
+                        <button type="submit" class="additional-products__add-products white-circle__main-img--position"><i class="material-icons white-circle white-circle--add">add</i></button>
+                    </div>
+                    <div class="description-sofa">
+                        <span class="uppertitle">Stockholm (002.450.50)</span>
+                        <h2 class="description-sofa__title">Three-Seat Sofa</h2>
+                        <p class="description-sofa__content">
+                            Highly durable full-grain leather which is sofa and has a natural look and feel.
+                            <button type="button" class="description-sofa__content--more">View more</button>
+                        </p>
+                        <div class="description-sofa__parameters">
+                            <ul class="description-sofa__list">
+                                <li class="description-sofa__item">
+                                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" class="">
+                                        <line x1="5" y1="0" x2="5" y2="20" stroke="#aaa" stroke-width="2" />
+                                        <line x1="0" y1="19" x2="10" y2="19" stroke="#aaa" stroke-width="2" />
+                                        <line x1="0" y1="1" x2="10" y2="1" stroke="#aaa" stroke-width="2" />
+                                    </svg>
+                                    <button type="button" class="description-sofa__button">74cm</button>
+                                </li>
+                                <li class="description-sofa__item">
+                                        <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0" y1="10" x2="20" y2="10" stroke="#aaa" stroke-width="2" />
+                                            <line x1="1" y1="5" x2="1" y2="15" stroke="#aaa" stroke-width="2" />
+                                            <line x1="19" y1="5" x2="19" y2="15" stroke="#aaa" stroke-width="2" />
+                                        </svg>
+                                    <button type="button" class="description-sofa__button">195cm</button>
+                                </li>
+                                <li class="description-sofa__item">
+                                    <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg" class="">
+                                        <line x1="5" y1="0" x2="10" y2="20" stroke="#aaa" stroke-width="2" />
+                                        <line x1="5" y1="19" x2="15" y2="19" stroke="#aaa" stroke-width="2" />
+                                        <line x1="0" y1="1" x2="10" y2="1" stroke="#aaa" stroke-width="2" />
+                                    </svg>
+                                    <button type="submit" class="description-sofa__button">86cm</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="description-sofa__order-good">
+                            <div class="price price--size price--position-content"><div class="price__border"></div>$1,400</div>
+                            <button type="submit" class="price__btn price__btn--sofaPosition"><span class="price-text">Add to cart</span><i class="material-icons white-circle material-icons__btn">add</i></button>
+                        </div>
+                    </div>
+                    <div class="icon-wrapper--size icon--color-grey">
+                        <ul class="icon__box">
+                            <li>
+                                <i class="material-icons material-icons--large material-icons--rotate">grid_on</i>
+                            </li>
+                            <li>
+                                <i class="material-icons material-icons--large material-icons--rotate">security</i>
+                            </li>
+                            <li>
+                                    <i class="material-icons material-icons--large material-icons--rotate">query_builder</i>
+                                </li>
+                            <li>
+                                <i class="material-icons material-icons--large material-icons--rotate">card_giftcard</i>
+                            </li>
+                        </ul>
+                        <p class="icon__title">Features</p>
+                    </div>
+                </div>
+                <div class="section-sofa__additional-products">
+                    <img src="img/showcase.jpg" alt="Photo with additional products" class="additional-products__img-main"/>
+                    <div class="additional-products__img-list">
+                        <div class="additional-products__img--topBorder"></div>
+                        <img src="img/preview1.jpeg" alt="Preview image 1" class="additional-products__img-item additional-products__img-item--first"/>
+                        <button type="submit" class="additional-products__add-products white-circle--position-left"><i class="material-icons white-circle white-circle--add">add</i></button>
+                        <img src="img/preview2.jpeg" alt="Preview image 2" class="additional-products__img-item additional-products__img-item--second"/>
+                        <button type="submit" class="additional-products__add-products white-circle--position-center"><i class="material-icons white-circle white-circle--add">add</i></button>
+                        <img src="img/preview3.jpeg" alt="Preview image 3" class="additional-products__img-item additional-products__img-item--third"/>
+                        <button type="submit" class="additional-products__add-products white-circle--position-right"><i class="material-icons white-circle white-circle--add">add</i></button>
+                    </div>
+                    <div class="additional-products__price-box">
+                        <div class="additional-products__price-list">
+                            <span class="uppertitle additional-products__span">Buy all products (4)</span>
+                            <div class="price price--size"><div class="price__border"></div>$1,481</div>
+                        </div>
+                        <button type="submit" class="price__btn"><span class="price-text">Add to cart</span><i class="material-icons white-circle material-icons__btn">add</i></button>
+                    </div>
+                </div>
+                <div class="section-sofa__bonuses">
+                    <ul class="bonuses__list">
+                        <li class="bonuses__item">
+                            <i class="material-icons material-icons--large material-icons--desctop-large icon--color-grey">card_giftcard</i>
+                            <p class="bonuses__text">Bonus card as a gift</p>
+                            <a href="#" class="nav-link nav-link--margin-auto" aria-label="More information about bonus card"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_forward</i></a>
+                        </li>
+                        <li class="bonuses__item">
+                            <i class="material-icons material-icons--large material-icons--desctop-large icon--color-grey">query_builder</i>
+                            <p class="bonuses__text">24 hours support</p>
+                            <a href="#" class="nav-link nav-link--margin-auto" aria-label="More information about support"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_forward</i></a>
+                        </li>
+                        <li class="bonuses__item">
+                            <i class="material-icons material-icons--large material-icons--desctop-large icon--color-grey">security</i>
+                            <p class="bonuses__text">10 year guarantee</p>
+                            <a href="#" class="nav-link nav-link--margin-auto" aria-label="More information about guarantee"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_forward</i></a>
+                        </li>
+                        <li class="bonuses__item">
+                            <i class="material-icons material-icons--large material-icons--desctop-large icon--color-grey">grid_on</i>
+                            <p class="bonuses__text">Newest technologies</p>
+                            <a href="#" class="nav-link nav-link--margin-auto" aria-label="More information about technologies"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_forward</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="profile">
+                <div class="profile__box">
+                    <a href="#" class="profile__link profile__container" tabindex="1"  >
+                        <img src="img/avatar.svg" alt="go to profile" class="profile__img"/>
+                        <div class="cart-link__count cart-link__count--position-asside">2</div>
+                    </a>
+                    <p class="profile__welcome profile__container">Hello Anna!</p>
+                    <div class="profile__proposals">
+                        <h4 class="profile__title profile__container uppertitle">My proposals</h4>
+                        <ul class="profile__list">
+                            <li class="profile__item profile__item--active">
+                                <a href="#" class="profile__item--link profile__container"><i class="material-icons material-icons--asside">event_seat</i>Sofa Stockholm</a>
+                            </li>
+                            <li class="profile__item">
+                                <a href="#" class="profile__item--link profile__container"><i class="material-icons material-icons--asside">weekend</i>Sofa Reactive</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile__proposals">
+                        <h4 class="profile__title profile__title--margin-top profile__container uppertitle">My choices</h4>
+                        <ul class="profile__list">
+                            <li class="profile__item profile__item--border">
+                                <a href="#" class="profile__item--link profile__container profile__container--border-bottom"><i class="material-icons material-icons--asside">event_seat</i>Armchirs<i class="material-icons material-icons--asside material-icons--asside-right">edit</i></a>
+                            </li>
+                            <li class="profile__item">
+                                <a href="#" class="profile__item--link profile__container"><i class="material-icons material-icons--asside">weekend</i>Fairly big<i class="material-icons material-icons--asside material-icons--asside-right">edit</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="profile__btn"><i class="material-icons material-icons--chat">chat_bubble</i></button>
+                </div>
+            </aside>
+        </div>
+        <div class="main__wrapper--background-grey">
+            <div class="container">
+                <section class="section-moreGoods">
+                    <div class="section-moreGoods__title">
+                        <h2 class="section-moreGoods__caption">You Might Like</h2>
+                        <span class="uppertitle uppertitle-margin">1 of 5</span>
+                        <ul class="section-moreGoods__nav">
+                            <li class="section-moreGoods__item">
+                                <button type="button" class="nav-link"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_back</i></button>
+                            </li>
+                            <li class="section-moreGoods__item">
+                                <button type="button" class="nav-link"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_forward</i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-moreGoods__wrap">
+                        <div class="section-moreGoods__box-goods">
+                            <img src="img/similar1.jpg" alt="Serving bowl" class="section-moreGoods__img"/>
+                            <div class="section-moreGoods__descriprion">
+                                <h3 class="section-moreGoods__descriptionTitle">Serving Bowl</h3>
+                                <p class="uppertitle uppertitle-margin">Stockholm 2017</p>
+                                <div class="price price-small"><div class="price__border"></div>$12</div>
+                            </div>
+                            <button type="submit" class="price__btn price__btn--position-absolute"><span class="price-text">Add to cart</span><i class="material-icons white-circle material-icons__btn">add</i></button>
+                        </div>
+                        <div class="section-moreGoods__box-goods display-none">
+                            <img src="img/similar2.jpg" alt="Pendant lamp" class="section-moreGoods__img"/>
+                            <div class="section-moreGoods__descriprion">
+                                <h3 class="section-moreGoods__descriptionTitle">Pendant Lamp</h3>
+                                <p class="uppertitle uppertitle-margin">Foto</p>
+                                <div class="price price-small"><div class="price__border"></div>$24</div>
+                            </div>
+                            <button type="submit" class="price__btn price__btn--position-absolute"><span class="price-text">Add to cart</span><i class="material-icons white-circle material-icons__btn">add</i></button>
+                        </div>
+                        <div class="section-moreGoods__box-goods display-none">
+                            <img src="img/similar3.jpg" alt="Wall clock" class="section-moreGoods__img"/>
+                            <div class="section-moreGoods__descriprion">
+                                <h3 class="section-moreGoods__descriptionTitle">Wall Clock</h3>
+                                <p class="uppertitle uppertitle-margin">Sippra</p>
+                                <div class="price price-small"><div class="price__border"></div>$12</div>
+                            </div>
+                            <button type="submit" class="price__btn price__btn--position-absolute"><span class="price-text">Add to cart</span><i class="material-icons white-circle material-icons__btn">add</i></button>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+        </div>
+        <div class="main__wrapper"> 
+            <div class="container">
+                <section class="section-client">
+                    <div class="section-client__title">
+                        <h2 class="section-moreGoods__caption">From our clients</h2>
+                        <span class="uppertitle">#Stockholm #Ikea</span>
+                        <a href="#" class="section-client__link">View our instagram</a>
+                    </div>
+                    <div class="section-client__photo">
+                        <ul class="section-client__box">
+                            <li class="section-client__item section-client__item--first">
+                                <div class="section-client__boxDecorative"></div>
+                                <img src="img/gallery1.jpg" alt="photo from instagram #1" class="instagram-photo"/>
+                                <a href="#" class="user-instagram-link"><img src="img/user.jpg" alt="user-instagram-photo" class="user-instagram-photo"/><span class="user-instagram-name">John Maybe</span></a>
+                            </li>
+                            <li class="section-client__item section-client__item--second">
+                                <img src="img/gallery2.jpg" alt="photo from instagram #2" class="instagram-photo"/>
+                                <a href="#" class="user-instagram-link"><img src="img/user.jpg" alt="user-instagram-photo" class="user-instagram-photo"/><span class="user-instagram-name">John Maybe</span></a>
+                            </li>
+                            <li class="section-client__item section-client__item--third">
+                                <img src="img/gallery3.jpg" alt="photo from instagram #3" class="instagram-photo"/>
+                                <button type="button" class="yellow-circle-button"><i class="material-icons yellow-circle">add</i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="main-logo-footer">
+                    <img src="img/logo.svg" alt="Logo ikea" class="main-logo__img-footer"/>
+                </a>
+                <div class="footer-navigation">
+                    <span class="uppertitle-footer"><i class="material-icons material-icons__copyright">copyright</i>Inter IKEA Systems B.V. 1999-2017</span>
+                    <ul class="footer-navigation__list">
+                        <li class="footer-navigation__item">
+                            <a href="#" class="footer-navigation__link">Catalogues</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#" class="footer-navigation__link">Services</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#" class="footer-navigation__link">Planning tools</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#" class="footer-navigation__link">Jots</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#" class="footer-navigation__link">Faq</a>
+                        </li>
+                        <li class="footer-navigation__item">
+                            <a href="#" class="footer-navigation__link">Contact us</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="nav-link footer-totop"><i class="material-icons material-icons--size-normal material-icons--position-middle">arrow_upward</i></a>
+                </div>
+                <div class="icon-wrapper--size icon--color-grey icon-wrapper--footer">
+                    <ul class="icon__box">
+                        <li>
+                            <a href="#" class="icon__link">
+                                <i class="material-icons material-icons--hover-black material-icons--large material-icons--rotate">place</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon__link">
+                                <i class="material-icons material-icons--hover-black material-icons--large material-icons--rotate">mode_comment</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon__link">
+                                <i class="material-icons material-icons--hover-black material-icons--large material-icons--rotate">local_post_office</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon__link">
+                                <i class="material-icons material-icons--hover-black material-icons--large material-icons--rotate">local_phone</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="icon__title">Contact us</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var burger = document.querySelector(".burger");
+        var list = document.querySelectorAll(".navigation-box__item");
+
+        burger.onclick = function() {
+            for (var i = 0;i < list.length;i++) {
+                list[i].classList.toggle('display-none');
+            }
+        }
+    </script>
+</body>
+</html>

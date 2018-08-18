@@ -1,0 +1,43 @@
+$mobile:320px;
+$mobile-landscape:576px;
+$tablet:768px;
+$desctop:992px;
+$desctop-large:1200px;
+
+$icon-header-size:20px;
+$icon-nav-size:18px;
+$icon-btn-size:22px;
+$icon-size:25px;
+
+$main-logo-width:60px;
+$search-width:150px;
+$sofa-img-width:250px;
+
+%display-none {
+    display: none;
+}
+
+%position-absolute {
+    position: absolute;
+}
+
+%position-relative {
+    position: relative;
+}
+
+%dispaly-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%border-none {
+    border:none;
+}
+
+%cursor {
+    cursor: pointer;
+}
+
+%center {
+    margin: 0 auto; 
+}

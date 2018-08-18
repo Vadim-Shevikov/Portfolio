@@ -1,0 +1,825 @@
+@mixin respond-to ($media) {
+    @if $media == mobile-landscape {
+        @media only screen and (min-width:$mobile-landscape) {
+            @content;
+        }
+    } @else if $media == tablet {
+        @media only screen and (min-width:$tablet) {
+            @content;
+        }
+    } @else if $media == desctop {
+        @media only screen and (min-width:$desctop) {
+            @content;
+        }
+    } @else if $media == desctop-large {
+        @media only screen and (min-width:$desctop-large) {
+            @content;
+        }
+    }
+}
+
+.container {
+    @include respond-to(mobile-landscape) {
+        width: $mobile-landscape - 20px;
+    }
+    @include respond-to(tablet) {
+        width: $tablet;
+    }
+    @include respond-to(desctop) {
+        width: $desctop;
+    }
+    @include respond-to(desctop-large) {
+        width: $desctop-large;
+    }
+}
+
+.main {
+    &-header {
+        &__wrapper {
+            @include respond-to(tablet) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        &__cart {
+            @include respond-to(desctop) {
+                top: 65px;
+            }
+            @include respond-to(desctop-large) {
+                position: static;
+            }
+        }
+
+        &__nav {
+            @include respond-to(tablet) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    
+    &-logo {
+        @include respond-to(tablet) {
+            height: 100%;
+        }
+
+        &__img {
+            @include respond-to(tablet) {
+                position: static;
+                width: $main-logo-width + 18px;
+                height: 100%;
+            }
+        }
+    
+        &__img-footer {
+            @include respond-to(tablet) {
+                width: $main-logo-width + 18px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.burger {
+    @include respond-to(tablet) {
+        display: none;
+    }
+
+}
+
+.navigation-box {
+    &__wrapper {
+        @include respond-to(tablet) {
+            padding-top: 0;
+            width: 500px;
+            margin-left: 50px;
+        }
+        @include respond-to(desctop-large) {
+            margin-left: 145px;
+            width: 460px;
+        }
+    }
+    
+    &__list {  
+        @include respond-to(tablet) {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        &.display-none {
+            @include respond-to(tablet) {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.form {
+    @include respond-to(desctop) {
+        margin-top: 0px;
+    }
+    @include respond-to(desctop-large) {
+        margin-left: 128px;
+        width: 330px;
+    }
+
+    &__search {
+        @include respond-to(mobile-landscape) {
+            width: $search-width + 150px;
+        }
+        @include respond-to(desctop) {
+            text-align: left;
+            width: $search-width + 130px;
+            margin-left: 10px;
+        }
+        @include respond-to(desctop-large) {
+            font-size: 15px;
+        }
+    }
+}
+
+.cart-link {
+    &__price {
+        @include respond-to(tablet) {
+            font-size: $icon-header-size - 3px;
+        }
+    }
+
+    &__count {
+        @include respond-to(mobile-landscape) {
+            display: block;
+        }
+        @include respond-to(tablet) {
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            font-size: 12px;
+        }
+    }
+}
+
+.section-sofa {
+    @include respond-to(desctop-large) {
+        width: 935px;
+        border-right: 1px solid #f1f1f1;
+    }
+    &__nav {
+        @include respond-to(tablet) {
+            display: block;
+        }
+        @include respond-to(desctop) {
+            margin-top: 21px;
+        }
+    }
+
+    &__option {
+        @include respond-to(desctop-large) {
+            flex-wrap: nowrap;
+            margin-top: 20px;
+        }
+    }
+
+    &__additional-products {
+        @include respond-to(desctop-large) {
+            padding-bottom: 0;
+            margin-bottom: -4px;
+        }
+    }
+
+    &__img-sofa {
+        @include respond-to(desctop) {
+            width: 400px;
+            margin-left: 0;
+        }
+    }
+
+    &__elipse {
+        @include respond-to(desctop) {
+            display: block;
+        }
+    }
+}
+
+.dimension {
+    &-box {
+        @include respond-to(desctop) {
+            top: 100px;
+            left: -50px;
+        }
+    }
+}
+
+.uppertitle {
+
+    &-footer {
+        @include respond-to(tablet) {
+            display: inline-block;
+            padding-bottom: 30px;
+        }
+        @include respond-to(desctop) {
+            padding-right: 40px;
+        }
+    }
+}
+
+.description-sofa {
+    @include respond-to(tablet) {
+        max-width: 345px;
+    }
+    @include respond-to(desctop-large) {
+        text-align: left;
+        margin-right: -35px;
+        max-width: 360px;
+    }
+    &__content {
+        @include respond-to(mobile-landscape) {
+            width: 500px;
+        }
+        @include respond-to(tablet) {
+            width: 280px;
+        }
+        @include respond-to(desctop-large) {
+            width: 360px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list {
+        @include respond-to(desctop-large) {
+            margin: 0;
+            margin-bottom: 78px;
+        }
+    }
+
+    &__order-good {
+        @include respond-to(desctop) {
+            margin: 0;
+            width: 100%;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__title {
+        @include respond-to(desctop-large) {
+            font-size: 30px;
+            margin-bottom: 24px;
+        }
+    }
+}  
+
+.price {
+    &--size {
+        @include respond-to(desctop) {
+            font-size: 35px;
+        }
+        @include respond-to(desctop-large) {
+            margin-left: 0;
+        }
+    }
+
+    &__btn {
+        @include respond-to(tablet) {
+            padding: 5px 0;
+        }
+
+        &--sofaPosition {
+            @include respond-to(desctop-large) {
+                margin-right: 55px;
+            }
+        }
+    }
+
+    &-small {
+        @include respond-to(desctop-large) {
+            font-size: 18px;
+        }
+    }
+}
+
+.icon {
+
+    &-wrapper {
+        &--size {
+            @include respond-to(mobile-landscape) {
+                width:$mobile-landscape - 100px;
+            }
+            @include respond-to(tablet) {
+                transform: rotate(-90deg);
+                width: 170px;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                position: relative;
+                top: -20px;
+                right: 2px;
+            }
+            @include respond-to(desctop-large) {
+                top: -95px;
+            }
+        }
+
+        &--footer {
+            @include respond-to(tablet) {
+                width: 190px;
+                margin-left: -130px;
+                position: relative;
+                left: 65px;
+                top: 0;
+            }
+            @include respond-to(desctop-large) {
+                left: 72px;
+                top: 30px;
+            }
+        }
+    }
+
+    &__box {
+        @include respond-to(tablet) {
+            width: 150px;
+            margin-left: auto;
+        }
+    }
+
+    &__title {
+        @include respond-to(tablet) {
+            width: 55%;
+        }
+    }
+}
+
+.additional-products {
+    &__img {
+        &-list {
+            @include respond-to(desctop-large) {
+                position: absolute;
+                width: 467px;
+                top: 468px;
+                left: 22px;
+                justify-content: center;
+                align-items: flex-end;
+            }
+        }
+
+        &-item {
+            &--first {
+                @include respond-to(desctop-large) {
+                    height: 115px;  
+                }
+            }
+
+            &--second {
+                @include respond-to(desctop-large) {
+                    filter: brightness(0.6);
+                    border-top: 3px solid grey;
+                }
+            }
+
+            &--third {
+                @include respond-to(desctop-large) {
+                    filter: brightness(0.6);
+                    border-top: 3px solid grey;
+                }
+            }
+        }
+
+        &--topBorder {
+            @include respond-to(desctop-large) {
+                display: block;
+                width: 147px;
+                height: 4px;
+                background: linear-gradient(to right, #ffc23f, #ffc23f 50% , #ababaa 50%, #ababaa);
+                position: absolute;
+                top: 0;
+                left: 9px;
+            }
+        }
+    }
+
+    &__add-products {
+        @include respond-to(tablet) {
+            width: 40px;
+            height: 40px;
+            animation: float 3s linear infinite;
+        }
+    }
+
+    &__price-box {
+        @include respond-to(desctop) {
+            width: 230px;
+            height: 230px;
+            padding: 40px;
+            text-align: left;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        @include respond-to(desctop-large) {
+            top: 38px;
+            left: 31px;
+        }
+    }
+}
+
+.white-circle {
+    @include respond-to(tablet) {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    &--position {
+        &-left {
+            @include respond-to(mobile-landscape) {
+                top: 210px;
+                left: 40px;
+            }
+            @include respond-to(tablet) {
+                top: 280px;
+                left: 60px;
+            }
+            @include respond-to(desctop) {
+                top: 380px;
+                left: 60px;
+            }
+            @include respond-to(desctop-large) {
+                top: -98px;
+                left: 67px;
+            }
+        }
+
+        &-center {
+            @include respond-to(mobile-landscape) {
+                top: 185px;
+                left: 290px;
+            }
+            @include respond-to(tablet) {
+                top: 260px;
+                left: 420px;
+            }
+            @include respond-to(desctop) {
+                top: 340px;
+                left: 550px;
+            }
+            @include respond-to(desctop-large) {
+                top: -140px;
+                left: 512px;
+            }
+        }
+
+        &-right {
+            @include respond-to(mobile-landscape) {
+                top: 170px;
+                right: 70px;
+            }
+            @include respond-to(tablet) {
+                top: 235px;
+                right: 115px;
+            }
+            @include respond-to(desctop) {
+                top: 315px;
+                right: 160px;
+            }
+            @include respond-to(desctop-large) {
+                top: -177px;
+                right: -290px;
+            }
+        }
+    }
+
+    &__main-img--position {
+        @include respond-to(tablet) {
+            top: 60px;
+            left: 180px;
+        }
+        @include respond-to(desctop) {
+            top: 116px;
+            left: 294px;
+        }
+    }
+}
+
+.yellow-circle {
+
+    &-button {
+        @include respond-to(desctop) {
+            width: 40px;
+            height: 40px;
+            top: calc(50% - 20px);
+            left: calc(50% - 20px);
+        }
+    }
+}
+
+.bonuses {
+    &__list {
+        @include respond-to(mobile-landscape) {
+            text-align: left;
+            width: 95%;
+        }
+        @include respond-to(desctop-large) {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        @include respond-to(desctop-large) {
+            width: 25%;
+            min-height: 442px;
+            margin: 0;
+            padding: 128px 0 54px 28px;
+        }
+    }
+
+    &__text {
+        @include respond-to(mobile-landscape) {
+            margin-bottom: 30px;
+        }
+        @include respond-to(desctop-large) {
+            font-size: 25px;
+            font-weight: 900;
+            width: 200px;
+            margin-top: 16px;
+        }
+    }
+}
+
+.nav-link {
+    @include respond-to(desctop) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.material-icons{
+
+    &--desctop-large {
+        @include respond-to(desctop) {
+            font-size: 60px;
+        }
+    }
+
+    &--position-middle {
+        @include respond-to(desctop) {
+            line-height: 38px;
+        }
+    }
+
+    &--rotate {
+        @include respond-to(tablet) {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.profile {
+    @include respond-to(desctop-large) {
+        display: block;
+    }
+    &__box {
+        @include respond-to(desctop-large) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 113px;
+        }
+    }
+
+    &__img {
+        @include respond-to(desctop) {
+            width: 30px;
+        }
+        @include respond-to(desctop-large) {
+            width: 40px;
+        }
+    }
+}
+
+.section-moreGoods {
+    @include respond-to(desctop) {
+        display: flex;
+        text-align: left;
+        padding: 30px;
+    }
+    @include respond-to(desctop-large) {
+        padding: 45px 0;
+        width: 1200px;
+    }
+
+    &__wrap {
+        @include respond-to(desctop) {
+            width: 640px;
+        }
+        @include respond-to(desctop-large) {
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        @include respond-to(desctop) {
+            justify-content: flex-start;
+            margin: 100px 0 0;
+        }
+        @include respond-to(desctop-large) {
+            margin-top: 120px;
+        }
+    }
+
+    &__item {
+        @include respond-to(desctop) {
+            width: 45px;
+        }
+    }
+
+    &__title {
+        @include respond-to(desctop) {
+            width: 150px;
+        }
+        @include respond-to(desctop-large) {
+            width: 220px;
+            margin: 0;
+            margin-right: 85px;
+        }
+    }
+
+    &__caption {
+        @include respond-to(desctop-large) {
+            font-size: 35px;
+            padding-bottom: 6px;
+        }
+    }
+
+    &__box-goods {
+        @include respond-to(tablet) {
+            margin: 15px;
+            width: 210px;
+        }
+        @include respond-to(desctop) {
+            margin: 0 1px;
+            width: 33%;
+        }
+        @include respond-to(desctop-large) {
+            min-height: 405px;
+            padding-top: 30px;
+        }
+
+        &.display-none {
+            &:nth-child(2) {
+                @include respond-to(mobile-landscape) {
+                    display: block;
+                }
+            }
+            @include respond-to(tablet) {
+                display: block;
+            }
+        }
+    }
+
+    &__img {
+        @include respond-to(desctop-large) {
+            width: 80%;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.section-client {
+    @include respond-to(desctop) {
+        display: flex;
+        text-align: left;
+        padding: 30px;
+    }
+    @include respond-to(desctop-large) {
+        padding: 40px 0;
+        width: 1200px;
+        min-height: 480px;
+    }
+    &__link {
+        @include respond-to(desctop) {
+            margin: 118px 0 0;
+        }
+    }
+
+    &__item {
+        &--first {
+            @include respond-to(desctop-large) {
+                height: 398px;
+                width: 638px;
+            }
+        }
+
+        &--second {
+            @include respond-to(desctop-large) {
+                height: 196px;
+            }
+        }
+
+        &--third {
+            @include respond-to(desctop-large) {
+                height: 200px;
+            }
+        }
+    }
+
+    &__boxDecorative {
+        @include respond-to(desctop) {
+            display: block;
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            z-index: -1;
+            top: -20px;
+            left: -20px;
+            background-color: #ffc23f;
+        }
+    }
+
+    &__title {
+        @include respond-to(desctop) {
+            width: 150px;
+        }
+        @include respond-to(desctop-large) {
+            width: 220px;
+            margin: 0;
+            margin-right: 85px;
+        }
+    }
+
+    &__photo {
+        @include respond-to(desctop) {
+            width: 640px;
+        }
+        @include respond-to(desctop-large) {
+            width: 100%;
+        }
+    }
+
+    &__box {
+        @include respond-to(desctop) {
+            max-height:398px;
+            display: grid;
+            grid-gap: 1px;
+            grid-template-columns: 6fr 4fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "first second"
+                "first third";
+        }
+    }
+}
+
+.footer {
+    &__wrapper {
+        @include respond-to(tablet) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include respond-to(desctop-large) {
+            padding-top: 36px;
+        }
+    }
+
+    &-navigation {
+        @include respond-to(tablet) {
+            width: 520px;
+            margin: 0 auto;
+        }
+        @include respond-to(desctop-large) {
+            margin-left: 320px;
+        }
+
+        &__list {
+            @include respond-to(tablet) {
+                width: 100%;
+            }
+            @include respond-to(tablet) {
+                justify-content: space-between;
+            }
+        }
+
+        &__link {
+            @include respond-to(desctop-large) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-totop {
+        @include respond-to(tablet) {
+            position: static;
+            margin-top: 25px;
+        }
+        @include respond-to(desctop-large) {
+            margin-right: 45px;
+        }
+    }
+}
