@@ -1,0 +1,221 @@
+$body-bg-color: #4677f6;
+$horisontal-padding: 25px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $body-bg-color;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.box {
+  background-color: #fff;
+  margin: 65px auto;
+  width: 374px;
+  min-height: 400px;
+
+  &-header {
+    padding: $horisontal-padding;
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+
+      .menu-icon, .search-icon {
+        width: 20px;
+        height: auto;
+        opacity: .5;
+
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+
+      span {
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: bold;
+        display: block;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  &-route {
+    width: 392px;
+    height: 122px;
+    position: relative;
+    top: -9px;
+    left: -9px;
+    border-radius: 4px;
+    background: url("img/map.jpg") no-repeat 0 0;
+    box-shadow: 5px 5px 40px -10px #000;
+
+    &-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(70, 119, 246, .7);
+      z-index: 0;
+
+      .navig {
+        padding: 17px 34px;
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+
+        .size {
+          width: 15px;
+          display: block;
+          position: relative;
+          left: 121px;
+          top: 3px;
+        }
+
+        .line-white {
+          display: inline-block;
+          width: 50px;
+          height: 2px;
+          background-color: #fff;
+          position: relative;
+          left: 10px;
+          top: -3px;
+        }
+
+        .line-grey {
+          display: inline-block;
+          width: 124px;
+          height: 2px;
+          background-color: #c5d3fa;
+          position: relative;
+          left: 6px;
+          top: -3px;
+        }
+
+        .circle-left,.circle-right {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: inline-block;
+          position: relative;
+          left: 14px;
+        }
+
+        .circle-right {
+          left: 2px;
+          margin-right: 15px;
+        }
+
+        span {
+          display: inline-block;
+          padding-top: 18px;
+          text-transform: uppercase;
+
+          &.last {
+            padding-left: 70px;
+          }
+        }
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: -15px;
+      right: 25px;
+      z-index: 1;
+      background-color: $body-bg-color;
+      border: none;
+      outline: none;
+      color: white;
+      text-transform: uppercase;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: .73em;
+
+      &:hover {
+        opacity: .85;
+        cursor: pointer;
+      }
+
+      img {
+        width: 14px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+    }
+  }
+
+  .route-details {
+    padding: 22px $horisontal-padding 0;
+    overflow-x: hidden;
+
+    ul {
+      list-style: none;
+      padding-top: 25px;
+
+      li.last {
+        padding-top: 25px;
+      }
+
+      li.img {
+        height: 57px;
+        overflow: hidden;
+        width: 400px;
+        border-radius: 3px;
+        margin-left: -8px;
+        position: relative;
+
+        .first {
+          position: relative;
+          top: -76px;
+          left: -4px;
+          width: 365px;
+        }
+
+        .second {
+          position: absolute;
+          left: 8px;
+          top: 19px;
+        }
+      }
+
+      img {
+        position: relative;
+        top:-4px;
+      }
+
+      div {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 12.5px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+
+        span {
+          display: block;
+          font-size: 11px;
+          color: #babbbb;
+          padding-bottom: 4px;
+          font-weight: normal;
+        }
+      }
+
+      .direction {
+        width: 20px;
+      }
+
+    }
+  }
+}
+

@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 700px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px auto;
+}
+
+.container .mountain {
+	height: 400px;
+	width: 400px;
+	background-color: #3381ff;
+	position: absolute;
+	bottom: -320px;
+	right: 125px;
+	transform: rotate(45deg);
+	z-index: 10
+}
+
+.container .mountain::before {
+	content: "";
+	display: inline-block;
+	background-color: #3381ff;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	bottom: -80px;
+	right: 145px;
+	z-index: 11
+}
+
+.container .mountain::after {
+	content: "";
+	display: inline-block;
+	background-color: #3381ff;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	bottom: 110px;
+	right: -50px;
+	z-index: 12
+}
+
+.container .sun {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: red;
+	opacity: 0;
+	position: absolute;
+	top: 230px;
+	right: 225px;
+	animation: sun 18s;
+	animation-timing-function:ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+.container .cloud-big1 {
+	width: 150px;
+	height: 56px;
+	background-color: #eee;
+	position: absolute;
+	top: 210px;
+	right: -150px;
+	border-radius: 28px;
+	animation: cloud 22s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+
+.container .cloud-big1::before {
+	content: "";
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: relative;
+	top: -40px;
+	left: 20px;
+	background-color: #eee;
+}
+
+.container .cloud-big1::after {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: -45px;
+	left: 0px;
+	background-color: #eee;
+}
+
+.container .cloud-big2 {
+	width: 150px;
+	height: 56px;
+	background-color: #eee;
+	position: absolute;
+	top: 210px;
+	right: -150px;
+	border-radius: 28px;
+	animation: cloud 18s;
+	animation-timing-function:ease-in-out;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+
+.container .cloud-big2::before {
+	content: "";
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: relative;
+	top: -40px;
+	left: 20px;
+	background-color: #eee;
+}
+
+.container .cloud-big2::after {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: -45px;
+	left: 0px;
+	background-color: #eee;
+}
+
+.container .cloud-little1 {
+	width: 110px;
+	height: 40px;
+	background-color: #eee;
+	position: absolute;
+	top: 210px;
+	right:-150px;
+	border-radius: 20px;
+	animation: cloud-l 10s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.container .cloud-little1::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: -25px;
+	left: 15px;
+	background-color: #eee;
+}
+
+.container .cloud-little1::after {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	top: -25px;
+	left: 2px;
+	background-color: #eee;
+}
+
+.container .cloud-little2 {
+	width: 110px;
+	height: 40px;
+	background-color: #eee;
+	position: absolute;
+	top: 210px;
+	right:-150px;
+	border-radius: 20px;
+	animation: cloud-l 8s;
+	animation-delay: 3s;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.container .cloud-little2::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: -25px;
+	left: 15px;
+	background-color: #eee;
+}
+
+.container .cloud-little2::after {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	top: -25px;
+	left: 2px;
+	background-color: #eee;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Task1</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+</head>
+<body>
+	<div class="box">	
+		<div class="header">
+			<div class="header-text">Edit Field</div>
+			<span><img src="forbidden-mark.svg" alt="close" class="close"></span>
+		</div>
+		<form action="#" method="POST" class="form">
+			<div class="column-left">
+				<label for="password">Title</label>
+					<input type="text" name="password" id="password" value="Password" />
+				<label for="user_password">Meta Key</label>
+					<input type="text" name="user_password" id="user_password" placeholder="user_password" />
+				<label for="help_text">Help Text</label>
+					<input type="text" name="help_text" id="help_text" value="Password should be between 8 and 30 characters lorem lorem lorem" />
+				<label for="min_length">Minimum length</label>
+					<input type="number" name="min_length" id="min_length" value="8" min="8" 	max="30" step="1" />
+				<label for="max_length">Maximum length</label>
+					<input type="number" name="max_length" id="max_length" value="30" min="8" 	max="30" step="1" />
+			</div>
+			<div class="column-right">
+				<label for="label">Label</label>
+					<input type="text" name="label" id="label" value ="Password" />
+				<label for="placeholder">Placeholder</label>
+					<input type="text" name="placeholder" id="placeholder" />
+				<label for="privacy">Privacy</label>
+					<select name="privacy" id="privacy">
+						<option value="everyone">Everyone</option>
+						<option value="everyone">Everyone</option>
+					</select>
+				<label>Force strong password?</label>
+					<div class="switch">
+					    <input type="checkbox" id="switch1" class="switch-check" checked="" />
+					    <label for="switch1" class="switch-label">
+				        	Yes
+					    	<span></span>
+					    </label>
+					</div>
+				<label>Automaticlly add a confirm password field?</label>
+					<div class="switch">
+					    <input type="checkbox" id="switch2" class="switch-check" checked="" />
+					    <label for="switch2" class="switch-label">
+				        	Yes
+					    	<span></span>
+					    </label>
+					</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

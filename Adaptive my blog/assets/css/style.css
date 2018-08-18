@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #eee;
+	font-family: Verdana;
+}
+
+header {
+	padding: 50px 0;
+}
+
+header h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header p {
+	text-align: center;
+}
+
+header p span {
+	background-color: #000;
+	color: #fff;
+	padding: 5px;
+}
+
+.container {
+	display: flex;
+}
+
+main {
+	width: 65%;
+	padding: 10px;
+}
+
+aside {
+	width: 35%;
+	padding: 10px;
+}
+
+main > div, aside > div {
+	box-shadow: 0 0 10px 0 rgba(51, 51, 51, .4);
+	margin-bottom: 40px;
+}
+
+img.responsive {
+	width: 100%;
+	height: auto;
+}
+
+.descr {
+	padding: 10px 20px 10px 10px;
+	background-color: #fff;
+}
+
+.descr span.grey {
+	display: inline-block;
+	background-color: #eee;
+	margin: 0 5px 20px 0;
+	padding:0 5px;
+	font-size: .9em;
+}
+
+.descr span.black {
+	background-color: #000;
+	color: white;
+}
+span.up {
+	text-transform: uppercase;
+}
+
+.descr h2 {
+	text-transform: uppercase;
+}
+
+.descr h4 time {
+	color: #aaa;
+}
+
+.more {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+}
+
+.more button {
+	border: 1px solid #eee;
+	background-color: #fff;
+	outline: none;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.more button::after {
+	content: "\BB";
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	left: 2px;
+}
+
+.more div span {
+	background-color: #000;
+	color: #fff;
+	padding: 4px 8px;
+	font-size: .8em;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.post .title {
+	background-color: #eee;
+	padding: 20px 10px;
+	font-size: 1.1em;
+}
+
+img.icon {
+	width: 40px;
+}
+
+.post .descr .icon,
+.post .descr .upper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.post .descr:not(:last-child) {
+	border-bottom: 1px solid #aaa;
+}
+
+.post .descr .upper span {
+	display: block;
+	font-size: .8em;
+}

@@ -1,0 +1,104 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(img/background.jpg) no-repeat;
+	background-size: cover;
+	min-height: 650px;
+	font-family: "Roboto";
+}
+
+.box {
+	width: 400px;
+	height: 440px;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: auto;
+	position: relative;
+	top: 100px;
+	padding:65px 40px 44px;
+	text-align: center;
+}
+
+.box .inbox {
+	position: relative;
+	height: 60px;
+}
+
+.box .inbox .container {
+	display: inline-block;
+	position: relative;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+
+.box .inbox:first-child .container>div:first-child {
+	line-height: 40px;
+}
+
+.box .inbox .container:first-child {
+	position: absolute;
+	left: 0px;
+}
+
+.box .inbox .container:first-child>div {
+	text-align: left;
+}
+
+.box .inbox .container:last-child:not(.alone) {
+	position: absolute;
+	right: 0;
+}
+
+.box .inbox .container:last-child:not(.alone)>div {
+	text-align: right;
+}
+
+.line {
+	background: #d3e6f4;
+	width: 28px;
+	height: 5px;
+	position: absolute;
+	top:18px;
+	left: -20px;
+}
+
+.box .inbox:first-child .container>div:first-child {
+	color: #3b8acf;
+	font-size: 45px;
+	font-family: "Prompt";
+	text-transform: uppercase;
+}
+
+.box .inbox:first-child .container>div:last-child {
+	font-weight: normal;
+}
+
+.box .inbox:first-child {
+	margin-bottom: 40px;
+}
+
+.box .inbox:nth-child(2) {
+	width: 260px;
+}
+
+.box .inbox .container>div:first-child,
+.box .inbox:first-child .container>div:last-child {
+	color: #aaa;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.box .inbox .container>div:last-child {
+	font-weight: bold;
+}
+
+img {
+	transform: scale(0.8);
+	position: absolute;
+	bottom: 40px;
+	right: 25px;
+}

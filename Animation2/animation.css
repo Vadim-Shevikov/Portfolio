@@ -1,0 +1,62 @@
+@keyframes sun {
+	from {
+		top: 230px;
+		background-color: red;
+	}
+
+	20% {
+		background-color: #ffb700;
+		opacity: 1;
+	}
+
+	50% {
+		top: -110px;
+	}
+
+	80% {
+		background-color: #ffb700;
+		opacity: 1;
+	}
+
+	to {
+		top: 230px;
+		background-color: red;
+	}
+}	
+
+@keyframes cloud {
+	from {
+		right: -150px;
+	}
+
+	50% {
+		right: 800px;
+	}
+
+	to {
+		right: -150px;
+	}
+}
+
+@keyframes cloud-l {
+	from {
+		right:-150px;
+	}
+
+	40% {
+		opacity: 1
+	}
+
+	50% {
+		right: 650px;
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 1
+	}
+
+	to {
+		right: -150px;
+	}
+}		

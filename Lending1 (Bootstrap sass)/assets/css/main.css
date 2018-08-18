@@ -1,0 +1,444 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  font-family: Roboto;
+  font-size: 16px;
+  min-width: 320px;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-header h2::before, .section-header h2::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 5rem;
+  height: 1px;
+  background-color: #222;
+  top: 50%;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.section-header h2::before {
+  left: -7rem;
+}
+
+.section-header h2:after {
+  right: -7rem;
+}
+
+.section-header h2:hover::before {
+  width: 3rem;
+  left: -5rem;
+}
+
+.section-header h2:hover::after {
+  width: 3rem;
+  right: -5rem;
+}
+
+header {
+  background: url(../img/bg-header.jpg) no-repeat 0 0;
+  background-size: cover;
+  height: 40rem;
+  position: relative;
+  z-index: 1;
+}
+
+header .knopka {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  line-height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+header .knopka:hover {
+  -webkit-animation: go .4s;
+          animation: go .4s;
+}
+
+header .header-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(52, 202, 152, 0.6);
+}
+
+header nav {
+  height: 7.5rem;
+  line-height: 7.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header nav ul.menu {
+  list-style-type: none;
+}
+
+header nav ul.menu li {
+  display: inline-block;
+  padding: .4rem;
+}
+
+header nav ul.menu li a {
+  text-transform: uppercase;
+  color: #ffa;
+  font-size: .75rem;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+header nav ul.menu li a:hover, header nav ul.menu li a:focus {
+  color: #222;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: .4rem 0;
+}
+
+header .header-title {
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+}
+
+header .header-title h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+header .header-title p {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+
+header .header-title button {
+  border: 2px solid #fff;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.services .service-block {
+  text-align: center;
+}
+
+section.services .service-block .circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+section.services .service-block .circle i {
+  margin: auto;
+  color: #c0301c;
+  font-size: 4rem;
+}
+
+section.services .service-block .circle:hover {
+  background-color: #c0301c;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+section.services .service-block .circle:hover i {
+  color: white;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+section.about {
+  background-color: #f8f8f8;
+}
+
+section.about .about-block p {
+  text-align: justify;
+}
+
+section.about .about-block .team-block {
+  position: relative;
+}
+
+section.about .about-block .team-block .team-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 202, 152, 0.3);
+  opacity: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+section.about .about-block .team-block .team-wrap:hover {
+  opacity: 1;
+}
+
+section.about .about-block .team-block .team-wrap .social-buttons {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 1.5rem;
+}
+
+section.about .about-block .team-block .team-wrap .social-buttons button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  width: 2rem;
+  padding: .5rem;
+}
+
+section.about .about-block .team-block .team-wrap .social-buttons button:hover {
+  background-color: #c0301c;
+}
+
+section.projects .project-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.projects .project-block .project-item {
+  margin: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+section.projects .project-block .project-item img {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+section.projects .project-block .project-item .romb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c0301c;
+  background-color: greenyellow;
+  position: absolute;
+  top: 45px;
+  left: calc(50% - 10px);
+  z-index: 10;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+section.projects .project-block .project-item:hover img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section.projects .project-block .project-item:hover .romb {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+section.projects .project-block .project-item .title-block {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #c0301c;
+  background-color: rgba(52, 202, 152, 0.3);
+  border-bottom: 1px solid #c0301c;
+  z-index: 1;
+}
+
+section.devider {
+  background: url(../img/devider.jpg) no-repeat;
+  background-size: cover;
+  height: 450px;
+  overflow: hidden;
+  text-align: center;
+}
+
+section.devider:hover div.devider-up {
+  top: 0;
+}
+
+section.devider:hover div.devider-up .line {
+  width: 50%;
+}
+
+section.devider:hover button {
+  top: 0;
+}
+
+section.devider div.devider-up {
+  position: relative;
+  top: -13rem;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+section.devider div.devider-up h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+section.devider div.devider-up .line {
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  margin: 4rem auto 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
+section.devider button {
+  margin-top: 6rem;
+  padding: .5rem 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: solid #fff;
+  border-width: 3px 0;
+  outline: none;
+  position: relative;
+  top: 15rem;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+section.blog .row {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+section.blog .row:first-child, section.blog .row:last-child {
+  border-bottom: none;
+}
+
+section.blog .blog-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.blog .blog-info .post-date {
+  border: 2px solid #000;
+  padding: .7rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  font-weight: bold;
+}
+
+section.blog .blog-info .post-date span {
+  font-size: 1.5rem;
+}
+
+section.blog .blog-info .post-title {
+  padding-left: 1rem;
+}
+
+section.blog .blog-info .post-title h4 {
+  text-transform: uppercase;
+  color: #c0301c;
+}
+
+section.blog .blog-info .post-preview {
+  width: 100%;
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+section.blog .blog-info .post-preview a {
+  text-transform: uppercase;
+  color: #c0301c;
+  font-weight: bold;
+}
+
+@-webkit-keyframes go {
+  from {
+    right: 15px;
+  }
+  40% {
+    right: 20px;
+  }
+  80% {
+    right: 15px;
+  }
+  to {
+    right: 10px;
+  }
+}
+
+@keyframes go {
+  from {
+    right: 15px;
+  }
+  40% {
+    right: 20px;
+  }
+  80% {
+    right: 15px;
+  }
+  to {
+    right: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	background-color: rgba(224, 255, 255, .8);
+	font-size: .9em;
+	font-family: Roboto, serif;
+}
+
+.box {
+	width: 750px;
+	margin: 40px auto;
+}
+
+.header {
+	background: #63b4e2;
+	padding:15px 15px 20px 20px;
+	color: white;
+}
+
+.header>div {
+	display: inline-block;
+}
+
+.header .close {
+	width: 14px;
+	cursor: pointer;
+	text-align: right;
+	float: right;
+	opacity: 0.8;
+}
+
+.header .close:hover  {
+	opacity: 1;
+}
+
+.form {
+	background-color: #fff;
+	color: #878787;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form {
+	padding: 20px 15px 5px;
+	background: #fff;
+}
+
+.form label {
+	display: block;
+	padding:10px 0 5px ;
+}
+
+.form label:not(.switch-label)::after {
+	content: url(question.svg);
+	display: inline-block;
+	width: 15px;
+	position: relative;
+	top: 2px;
+	left: 8px;
+}
+
+.form input,
+.form select {
+	width: 100%;
+	padding: 5px 5px 5px 8px;
+	color: #878787;
+	border:1px solid rgba(135, 135, 135, .5);
+	border-radius: 3px;
+
+}
+
+.form input::placeholder {
+	color: #cfcfcf;
+}
+
+.column-left {
+	width: 50%;
+	padding-right: 10px;
+}
+
+.column-right {
+	width: 50%;
+	padding-left: 20px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.switch {
+	background:#63b4e2;
+	border:1px solid rgba(135, 135, 135, .5);
+	border-radius: 2px;
+	height: 25px;
+	position: relative;
+	width: 50px;
+}
+
+.switch-check {
+    position: absolute;
+    visibility: hidden;
+}
+
+.switch-label {
+	cursor: pointer;
+	color:white;
+	position:relative;
+	top:-7px;
+	left:12px;
+}
+
+.switch-label span {
+	background: white;
+	border-radius: 2px;
+	border: 1px solid rgba(135, 135, 135, .5);
+	height: 29px;
+	left: -15px;
+	position: absolute;
+	top: 4px;
+	transition:all 0.3s ease;
+	width: 54px;
+}
+
+.switch-check:checked + .switch-label span {
+	left: 35px;
+}

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #009999;
+}
+
+#container {
+    width: 330px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+button {
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px #ffffff solid;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.highlight:hover {
+    background-color: #fff;
+    color: #009999;
+}
+
+.fade:hover {
+    opacity: 0;
+}
+
+.rizzle:hover {
+    border-style: dotted;
+}
+
+.knit:hover {
+    height: 0;
+}
+
+.shrink:hover {
+    transform: scale(0);
+}
+
+.rotate:hover {
+    transform: rotate(90deg);
+}
+
+.boom:hover {
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+.squeeze:hover {
+    transform: perspective(0px) rotateX(-90deg)
+               scale(1.4);  
+}
+
+.deform:hover {
+    transform: skew(45deg,45deg);
+}

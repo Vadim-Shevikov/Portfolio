@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <form class="account" action="#" method="POST">
+    	<div class="form-header">
+    		<h2>Account settings</h2>
+    		<span>
+    			<img src="assets/img/close.svg" alt="close" />
+    		</span>
+    	</div>
+    	<div class="form-body">
+    		<img class="avatar" src="assets/img/avatar.jpg" alt="" />
+    		<div class="form-line">
+    			<label for="username">Username</label>
+    			<input type="text" name="username" id="username" placeholder="Enter your username" />
+    		</div>
+    		<div class="form-line">
+                <div>
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" /> 
+                </div>
+                <div>
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" /> 
+                </div>     
+            </div>
+    		<div class="form-line">
+                    <label for="email">First name</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" /> 
+            </div>
+    		<div class="form-line">
+                     <label for="textarea">Bio</label>
+                     <textarea name="textarea" id="textarea" cols="58" rows="5"></textarea>     
+            </div>
+    	</div>
+    	<div class="form-footer">
+            <input type="reset" value="Cancel" />
+            <input type="submit" value="Save" />   
+        </div>
+    </form>
+</body>
+</html>

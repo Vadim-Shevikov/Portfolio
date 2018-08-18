@@ -1,0 +1,24 @@
+@media only screen and (max-width: 992px) {
+	.container {
+		flex-direction: column;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		margin-top: -20px;
+	}
+
+	.last {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.none {
+		display: none;
+	}
+}

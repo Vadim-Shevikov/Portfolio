@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #4677f6;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.box {
+  background-color: #fff;
+  margin: 65px auto;
+  width: 374px;
+  min-height: 400px;
+}
+
+.box-header {
+  padding: 25px;
+}
+
+.box-header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-header-content .menu-icon, .box-header-content .search-icon {
+  width: 20px;
+  height: auto;
+  opacity: .5;
+}
+
+.box-header-content .menu-icon:hover, .box-header-content .search-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.box-header-content span {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+  display: block;
+  padding-top: 5px;
+}
+
+.box-route {
+  width: 392px;
+  height: 122px;
+  position: relative;
+  top: -9px;
+  left: -9px;
+  border-radius: 4px;
+  background: url("img/map.jpg") no-repeat 0 0;
+  box-shadow: 5px 5px 40px -10px #000;
+}
+
+.box-route-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 119, 246, 0.7);
+  z-index: 0;
+}
+
+.box-route-wrapper .navig {
+  padding: 17px 34px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.box-route-wrapper .navig .size {
+  width: 15px;
+  display: block;
+  position: relative;
+  left: 121px;
+  top: 3px;
+}
+
+.box-route-wrapper .navig .line-white {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  left: 10px;
+  top: -3px;
+}
+
+.box-route-wrapper .navig .line-grey {
+  display: inline-block;
+  width: 124px;
+  height: 2px;
+  background-color: #c5d3fa;
+  position: relative;
+  left: 6px;
+  top: -3px;
+}
+
+.box-route-wrapper .navig .circle-left, .box-route-wrapper .navig .circle-right {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  left: 14px;
+}
+
+.box-route-wrapper .navig .circle-right {
+  left: 2px;
+  margin-right: 15px;
+}
+
+.box-route-wrapper .navig span {
+  display: inline-block;
+  padding-top: 18px;
+  text-transform: uppercase;
+}
+
+.box-route-wrapper .navig span.last {
+  padding-left: 70px;
+}
+
+.box-route button {
+  position: absolute;
+  bottom: -15px;
+  right: 25px;
+  z-index: 1;
+  background-color: #4677f6;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: .73em;
+}
+
+.box-route button:hover {
+  opacity: .85;
+  cursor: pointer;
+}
+
+.box-route button img {
+  width: 14px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.box .route-details {
+  padding: 22px 25px 0;
+  overflow-x: hidden;
+}
+
+.box .route-details ul {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.box .route-details ul li.last {
+  padding-top: 25px;
+}
+
+.box .route-details ul li.img {
+  height: 57px;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 3px;
+  margin-left: -8px;
+  position: relative;
+}
+
+.box .route-details ul li.img .first {
+  position: relative;
+  top: -76px;
+  left: -4px;
+  width: 365px;
+}
+
+.box .route-details ul li.img .second {
+  position: absolute;
+  left: 8px;
+  top: 19px;
+}
+
+.box .route-details ul img {
+  position: relative;
+  top: -4px;
+}
+
+.box .route-details ul div {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12.5px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+.box .route-details ul div span {
+  display: block;
+  font-size: 11px;
+  color: #babbbb;
+  padding-bottom: 4px;
+  font-weight: normal;
+}
+
+.box .route-details ul .direction {
+  width: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

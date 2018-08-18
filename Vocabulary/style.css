@@ -1,0 +1,162 @@
+		body {
+			font-family: "Times New Roman",san-serif,serif;
+			width: 80%;
+			margin: auto;
+			padding: 10px;
+			border: 3px solid coral;
+			margin: 20px auto;
+		}
+
+		dt {
+			background: rgba(102, 255, 204, 0.5);
+			padding: 10px;
+			font-weight: bold;
+			font-size: 25px;
+			color: blue;
+		}
+
+		dd {
+			border: 2px dashed lightblue;
+			padding: 10px;
+		}
+
+		div.main_name {
+			font-weight: bold;
+			text-align: left;
+			width: 95%;
+			font-style: normal;
+		}
+
+		div {
+			width: 90%;
+			margin: auto;
+			font-style: italic;
+		}
+
+		.title {
+			color: blue;
+			text-decoration: underline;
+		}
+
+		#navigation {
+			text-align: center;
+			font-weight: bold;
+			color: green;
+			font-size: 20px;
+		}
+
+		.no-html5 {
+			color: red; 
+		}
+
+		.no-html5 span::after {
+			content: url("images/no-html5.png");
+			display: inline-block;
+		}
+
+		.html5 {
+			color: green;
+		}
+
+		.html5 span::after {
+			content: url("images/html5.png");
+			display: inline-block;
+		}
+
+		dt::before,
+		a::before {
+			content: "\3c";
+			display: inline-block;
+		}
+
+		dt::after,
+		a::after {
+			content: "\3e";
+			display: inline-block;
+		}
+
+		ul ul {
+			position: absolute;
+			top: 5px;
+    		left: 120px;
+    		z-index: 10;
+    		width: 150px;
+    		margin: 0;
+    		padding: 0;
+    		background: white;
+    		display: none;
+		}
+
+		ul>li:hover ul {
+			display:inline-block;
+		}
+
+		ul[class]>li {
+			display: inline-block;
+			width: 180px;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: auto;
+			padding: 0;
+			width: 100%;
+			color: coral;
+		}
+
+		ul>li {
+			margin: 2px;
+			text-align: center;
+			position: relative;
+			border: 1px solid;
+			line-height: 30px;
+			border-radius: 5px;
+		}
+		
+		li>a {
+			display: block;
+    		padding: 8px 10px;
+    		color: #0088cc;
+    		text-decoration: none;
+		}
+
+		li:hover {
+			background: rgba(102, 255, 255, .1);
+			box-shadow: 0px 0px 10px red;
+		}
+
+		p+a {
+			position: fixed;
+			right: 10px;
+			padding: 10px;
+			border: 1px solid;
+			border-radius: 5px;
+			background: rgba(0, 128, 0, .1);
+			text-decoration: none;
+			opacity: 0.3;
+		}
+
+		p~a:hover {
+			background: white;
+			box-shadow: 0px 0px 5px black;
+			transform: scale(1.1);
+			opacity: 1;
+		}
+
+		a[title]::before,
+		a[href$=".html"]::before,
+		a[title]::after,
+		a[href$=".html"]::after,
+		a[href$=".html"] {
+			content: "";
+		}
+
+		dt a[href$=".html"] {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		div>img {
+			border: 1px solid rgba(128, 128, 128, .5);
+			width: 100%;
+		}

@@ -1,0 +1,224 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto";
+	font-size: 16px;
+	min-width: 900px;
+}
+
+div.container {
+	display: flex;
+	width: 910px;
+	margin: 0 auto;
+}
+
+header {
+	width: 910px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0 20px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #adabac;
+	padding-bottom: 10px;
+}
+
+nav ul li a:hover {
+	color: #333;
+	border-bottom: 2px solid #333;
+}
+
+nav ul li input {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #b2b2b3;
+	padding-bottom: 5px;
+	font-size: 1rem;
+}
+
+nav ul li input::placeholder {
+	color: #757573;
+}
+
+section.watch {
+	background: url("../img/watches.png") no-repeat 100% 0;
+	border-bottom: 1px solid #b2b2b3;
+}
+
+section.watch > div.container,
+section.nike > div.container,
+footer > div.container {
+	align-items: center;
+	height: 625px;
+	position: relative;
+}
+
+section.watch > div.container div,
+section.nike > div.container div,
+footer > div.container div {
+	width: 400px;
+	padding-bottom: 200px;
+}
+
+section.watch > div.container div h2,
+section.nike > div.container div h2,
+footer > div.container div h2 {
+	font-size: 2.5rem;
+}
+
+section.watch > div.container div p,
+section.nike > div.container div p,
+footer > div.container div p {
+	color: #999;
+	border-left: 2px solid #999;
+	padding-left: 30px;
+	line-height: 1.5rem;
+}
+
+section.watch > div.container div button,
+section.nike > div.container div button,
+footer > div.container div button {
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	background-color: #ea625c;
+	padding: 10px 22px;
+	color: #fff;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+section.watch > div.container div button:hover,
+section.nike > div.container div button:hover,
+footer > div.container div button:hover {
+	cursor: pointer;
+	background-color: #ea2c5c;
+}
+
+section.nike > div.container div img {
+	width: 400px;
+	margin-top: 68px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+section.nike > div.container div {
+	margin-top: 300px;
+}
+
+
+section.columns {
+	padding: 2rem;
+}
+
+section.columns > div.container {
+	justify-content: space-between;
+}
+
+section.columns > div.container div {
+	padding-right: 3rem;
+}
+
+section.columns > div.container div h4 {
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+section.columns > div.container div p {
+	line-height: 1.5rem;
+}
+
+a.more {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ea625c;
+	font-weight: bold;
+	position: relative;
+	left: 50px;
+	display: inline-block;
+	transition: .6s;
+}
+
+a.more::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background-color: #ea625c;
+	top: calc(50% - 1px);
+	left: -50px;
+	transition: .6s;
+}
+
+a.more:hover {
+	padding-left: 10px;
+}
+
+a.more:hover::before {
+	width: 40px;
+}
+
+span.square {
+	width: 4px;
+	height: 4px;
+	background-color: #c7c8c8;
+	display: inline-block;
+	position: relative;
+}
+
+span.square::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	width: 4px;
+	height: 4px;
+	background-color: #c7c8c8;
+}
+
+span.square::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+	width: 4px;
+	height: 4px;
+	background-color: #c7c8c8;
+}
+
+footer {
+	margin-top: 90px;
+	padding-top: 100px;
+	height: 1000px;
+	background: url(../img/runners.jpg) 0 -150px no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+footer > div.container div{
+	position: absolute;
+	right: 0;
+	top: 150px;
+}
+
+footer > div.container div p {
+	color: white;
+	border-color: white;
+}

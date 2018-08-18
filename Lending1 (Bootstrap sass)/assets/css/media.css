@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+  .section-header {
+    padding: 0 0.5rem;
+  }
+  .section-header h2 {
+    font-size: 3rem;
+  }
+  .section-header h2::before, .section-header h2::after {
+    display: none;
+  }
+  header nav {
+    height: 6rem;
+    line-height: 6rem;
+    background-color: rgba(87, 238, 119, 0.9);
+    position: fixed;
+  }
+  header nav .menuBtn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    color: white;
+    background-color: #f5d416;
+  }
+  header nav .menuBtn span {
+    top: -1.25rem;
+    font-size: 1.5rem;
+  }
+  header nav #topMenu {
+    background-color: rgba(87, 238, 119, 0.9);
+    margin-top: .5rem;
+  }
+  header nav #topMenu ul.menu li {
+    display: block;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  header nav #topMenu ul.menu li a {
+    display: block;
+  }
+  header nav #topMenu ul.menu li a:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+    border: none;
+  }
+  header .header-title {
+    margin-top: 180px;
+  }
+  header .header-title h1 {
+    font-size: 3.5rem;
+  }
+  header .header-title p {
+    font-size: 1.5rem;
+  }
+  section.blog img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+  section.devider div.devider-up h2 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=media.css.map */

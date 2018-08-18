@@ -1,0 +1,39 @@
+  body {
+    font-weight: 500;
+  }
+
+  .nav {
+    font-size: .75rem;
+  }
+
+  .nav-item {
+    margin-right: -1.5rem;
+    position: relative;
+  }
+
+  .badge {
+    top: 2rem;
+    left: 4rem;
+  }
+
+  .table tr:nth-child(3) td{
+    line-height: 1px;
+  }
+  
+  .custom-control-label::after {
+    background-color: #fff;
+    border:1px solid lightgrey;
+    border-radius: 50%;
+  }
+
+   input:checked ~ .custom-control-label::after {
+    background-color: blue;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+  }
+
+  .row:last-child {
+    margin-left: -1.5rem;
+    margin-right: -2rem;
+  }

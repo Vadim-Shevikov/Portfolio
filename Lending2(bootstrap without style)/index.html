@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #ea704e;
+            min-width: 380px;
+        }
+
+        .home {
+            border-bottom: 3px solid !important;
+        }
+
+        .photo {
+            right: 0;
+            top: 0;
+        }
+
+        .z {
+            position: relative;
+            z-index: 2;
+        }
+
+        .littlet {
+            font-size: 11px;
+        }
+
+        .img {
+            height: 85%;
+        }
+
+        @media only screen and (max-width:768px) {
+            .w-50 {
+                width: 100% !important;
+                padding-right: 16px;
+            }
+
+            .height {
+            height: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="col-12 py-2 bg-white mt-5 mb-5">
+            <nav class="navbar navbar-expand-lg navbar-light pl-4">
+                <a class="navbar-nav font-weight-bold border-right py-2 pr-3">
+                    Ecommerce Elements
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse small" id="navb">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase font-weight-bold  home px-0 mx-3" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase px-0 mx-3" href="#">
+                                Brands
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase px-0 mx-3" href="#">
+                                Mens
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase px-0 mx-3" href="#">
+                                Womens
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase px-0 mx-3" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline" action="#" method="POST">
+                        <button class="btn  bg-white my-2 my-sm-0" type="button">
+                            <img src="assets/img/Magnifying.png" alt="" />
+                        </button>
+                        <input class="form-control border-top-0 border-right-0 border-bottom-0 rounded-0" type="text" placeholder="Search..." />
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main class="row mx-0">
+            <div class="col-12 bg-white px-0 pl-5 py-5 text-center text-md-left">
+                <img class="pb-4" src="assets/img/logo.png" alt="" />
+                <h4 class="text-uppercase font-weight-bold pb-2">rb2131 901 new wayfarer</h4>
+                <p class="w-50 text-center text-sm-left pb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea dignissimos dolore pariatur aperiam eligendi,
+                    in odit quas enim quod quis repudiandae unde quaerat fuga a consectetur est veritatis harum, fugit tenetur
+                    dolores sequi corrupti nobis! Vitae possimus odit similique error.</p>
+                <button type="button" class="btn btn-success font-weight-bold text-uppercase px-3 py-2 mt-0 mt-sm-4 z">find out more</button>
+                <img class="img-fluid position-absolute photo h-100 d-none d-md-block" src="assets/img/group1.png" alt="" />
+            </div>
+            <div class="col-12 col-lg-5 bg-white px-0 mt-5 pb-3">
+                <img class="img-fluid w-100" src="assets/img/group2.png" alt="" />
+                <h4 class="text-uppercase font-weight-bold px-4">van doren authentic</h4>
+                <p class="px-4 small">(Parrot/Light Blue)</p>
+                <p class="px-4 small">
+                    <span class="font-weight-bold">Size:UK9</span>
+                    <a href="#">[Change]</a>
+                </p>
+                <p class="h3 d-flex align-items-center justify-content-between px-4">
+                    <span class="font-weight-bold">&#163;54.00</span>
+                    <button type="button" class="btn btn-info btn-sm px-4 py-2 text-uppercase littlet">Add to basket
+                    </button>
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 bg-white px-0 mt-5 offset-lg-1 pb-0 pb-md-4 pb-md-0">
+                <img class="img-fluid w-100 h-75 height" src="assets/img/group3.png" alt="" />
+                <p class="h3  align-items-center justify-content-around px-4 pt-4 d-none d-md-flex">
+                    <span class="font-weight-bold text-center">9.374
+                        <span class="font-weight-normal h6 d-block">Sales This Week</span>
+                    </span>
+                    <span class="font-weight-bold text-center">125.457
+                        <span class="font-weight-normal h6 d-block">Total Sales</span>
+                    </span>
+                    <span class="font-weight-bold text-center">+17%
+                        <span class="font-weight-normal h6 d-block">Total Income</span>
+                    </span>
+                </p>
+            </div>
+            <div class="col-12 col-lg-7 bg-white px-4 py-4 mt-5">
+                <h4 class="font-weight-bold pb-2">Shopping Bag</h4>
+                <div class="border-bottom pb-3 d-flex align-items-center justify-content-between">
+                    <div>
+                    <img src="assets/img/product.png" alt="" />
+                    <span class="font-weight-bold px-1 d-none d-sm-inline">Vans Vault 2012...</span>
+                    <a href="#" class="mr-0 pr-0 mr-md-5 pr-sm-3">[Remove]</a>
+                    </div>
+                    <div>
+                    <div class="box d-inline-block border px-2 py-1 mr-2">1</div>
+                    <span class="font-weight-bold h5">&#163;54.00</span>
+                    </div>
+                </div>
+                <div class="border-bottom pb-3 pt-3 d-flex align-items-center justify-content-between">
+                    <div>
+                    <img src="assets/img/product-1.png" alt="" />
+                    <span class="font-weight-bold px-1 d-none d-sm-inline">America Pure 12..</span>
+                    <a href="#" class="mr-0 pr-0 mr-md-5 pr-sm-3">[Remove]</a>
+                    </div>
+                    <div>
+                    <div class="box d-inline-block border px-2 py-1 mr-2">2</div>
+                    <span class="font-weight-bold h5">&#163;32.00</span>
+                    </div>
+                </div>
+                <div class=" pb-3 pt-3 d-flex align-items-center justify-content-between">
+                    <div>
+                    <img src="assets/img/product-2.png" alt="" />
+                    <span class="font-weight-bold px-1 d-none d-sm-inline">Fred Perry Dark...</span>
+                    <a href="#" class="mr-0 pr-0 mr-md-5 pr-sm-3">[Remove]</a>
+                    </div>
+                    <div>
+                    <div class="box d-inline-block border px-2 py-1 mr-2">1</div>
+                    <span class="font-weight-bold h5">&#163;70.00</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-1">
+                    <h3 class="font-weight-bold">Total:&#163;156.00 </h3>
+                    <button type="button" class="text-light font-weight-bold btn btn-warning btn-sm px-4 text-uppercase littlet">Checkout
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 bg-white px-0 mt-5 pb-3 offset-lg-1">
+                <img class="img-fluid w-100 img mb-2" src="assets/img/map.png" alt="" />
+                <h4 class="font-weight-bold px-4">1600 Pacific Ave</h4>
+                <p class="px-4 small">Venice,CA,United States</p>
+
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar navbar-expand navbar-light pl-4 bg-white py-2 my-5">
+                <a class="navbar-nav font-weight-bold border-right py-2 pr-4 small">
+                    Ecommerce Elements
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-twitter font-weight-bold" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-facebook font-weight-bold" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold fa fa-vimeo" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold fa fa-pinterest-p" href="#"></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

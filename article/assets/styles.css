@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Roboto";
+	background-color: #f2ce97;
+	padding-top: 70px;
+}
+
+main {
+	width: 1000px;
+	margin: auto;
+	height: 555px;
+}
+
+main>div {
+		float: left;
+		height: 100%;
+		padding: 65px 40px 40px 40px;
+}
+
+
+main .box-left {
+	width: 40%;
+	background-color: #484956;
+	color: white;
+	font-size: 30px;
+	font-weight: 300;
+	position: relative;
+
+}
+
+main .box-right {
+	width: 60%;
+	background-color: #fff;
+	position: relative;
+}
+
+main .box-left>div:first-child {
+	font-weight: 500;
+}
+
+div:empty {
+	width: 60px;
+	height: 4px;
+	background-color: #e37b62;
+	margin: 10px 0;
+}
+
+main>div.box-left>div:last-child {
+	font-size: 18px;
+	position: absolute;
+	bottom: 40px;
+}
+
+i {
+	display: inline-block;
+	background: url(img/avatar.jpg) no-repeat 50%;
+	height: 65px;
+	width: 65px;
+	vertical-align: middle;
+	background-size: cover;
+	border-radius: 50%;	
+	margin-right: 15px;
+	box-shadow: 0 5px 50px 0px black;
+}
+
+main .box-right p {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	padding-bottom: 25px;
+}
+
+main .box-right p:first-child:first-letter {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+main .box-right p:last-of-type {
+	background: linear-gradient(to top,#f7f7f7 , #fefefe 10%,white 10% );
+}
+
+main .box-right div {
+	margin: 25px 0;
+}
+
+span {
+	font-weight: bold;
+}
+
+main .box-right div:last-of-type {
+	position: absolute;
+	color: #c9beb6;
+	right: 55px;
+	bottom: 5px;
+}
+
+main .box-right div:last-of-type::before {
+	content: url(img/comment.svg);
+	position: relative;
+	top: 6px;
+	right: 10px;
+}
+
+main .box-right div:last-of-type::after {
+	content: url(img/more.svg);
+	position: relative;
+	top: 6px;
+	left: 20px;
+}
